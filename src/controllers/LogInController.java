@@ -45,5 +45,10 @@ public class LogInController implements Initializable {
 
     }
 
+    @FXML
+    private void clicked_Login(javafx.scene.input.MouseEvent me){
+
+    }
+
 
 }

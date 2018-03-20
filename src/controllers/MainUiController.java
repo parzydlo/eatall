@@ -55,16 +55,9 @@ public class MainUiController implements Initializable {
 
     @FXML
     private void open_LogIn(MouseEvent ME) throws IOException {
-      //  Parent fxml = FXMLLoader.load(getClass().getResource("/views/LogIn.fxml"));
-       // contentArea.getChildren().removeAll();
-       // contentArea.getChildren().setAll(fxml);
-
-        Parent root = FXMLLoader.load(getClass().getResource("/views/LogIn.fxml"));
-        Scene scene = new Scene(root);
-        Stage stage = new Stage();
-        stage.setScene(scene);
-        // stage.initStyle(StageStyle.UNDECORATED);
-        stage.show();
+        Parent fxml = FXMLLoader.load(getClass().getResource("/views/Login.fxml"));
+        contentArea.getChildren().removeAll();
+        contentArea.getChildren().setAll(fxml);
     }
 
     @FXML
