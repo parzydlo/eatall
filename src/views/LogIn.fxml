@@ -26,8 +26,8 @@
                     <children>
                         <GridPane layoutX="180.0" layoutY="95.0" prefHeight="162.0" prefWidth="240.0">
                             <children>
-                                <JFXPasswordField GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="password"/>
                                 <JFXTextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="username"/>
+                                <JFXPasswordField GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="password"/>
                                 <Label contentDisplay="RIGHT" prefHeight="17.0" prefWidth="94.0" text="Username:"
                                        GridPane.rowIndex="1">
                                     <font>

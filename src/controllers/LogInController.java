@@ -38,14 +38,6 @@ public class LogInController implements Initializable {
     }
 
     @FXML
-    private void open_SignUp(ActionEvent e) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("/views/SignUp.fxml"));
-       // pane.getChildren().removeAll();
-        pane.getChildren().setAll(fxml);
-
-    }
-
-    @FXML
     private void clicked_Login(javafx.scene.input.MouseEvent me){
 
     }
