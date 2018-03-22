@@ -7,8 +7,8 @@ public class Business extends Customer{
 
     public Business(String fn, String ln, String bn, String pw, int id, int rate){
         super(fn, ln, bn, pw, id);
-        rating=rate;
-        businessID=id;
+        this.rating=rate;
+        this.businessID=id;
     }
     public String getBusinessname(){
         return businessname;
