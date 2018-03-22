@@ -32,11 +32,6 @@ import main.User;
  */
 public class SignUpController implements Initializable {
 
-    boolean usr = false;
-    boolean pwd = false;
-    boolean fn = false;
-    boolean ln = false;
-    boolean bn = false;
     protected SignUpModel loginModel = new SignUpModel();
     Random rand = new Random();
     @FXML
@@ -89,7 +84,7 @@ public class SignUpController implements Initializable {
     }
 
     public void clicked_SignUpBus(javafx.scene.input.MouseEvent me) throws SQLException {
-        if(blastname.getText().isEmpty()||blastname.getText().isEmpty()) errorlabel2.setText("First name or Surname cannot be empty");
+        if(bfirstname.getText().isEmpty()||blastname.getText().isEmpty()) errorlabel2.setText("First name or Surname cannot be empty");
         if(bpassword.getText().isEmpty()) errorlabel2.setText("Password cannot be empty");
         if(businessname.getText().isEmpty()){
             errorlabel2.setText("Username cannot be empty");

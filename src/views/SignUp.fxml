@@ -65,7 +65,7 @@
                         </JFXButton>
                   <Label fx:id="errorlabel" alignment="CENTER" layoutX="500.0" layoutY="127.0" prefHeight="98.0" prefWidth="260.0" text="" textFill="RED">
                      <font>
-                        <Font size="18.0" />
+                        <Font size="15.0" />
                      </font>
                   </Label>
                     </children>
@@ -123,7 +123,7 @@
                         </JFXButton>
                         <Label fx:id="errorlabel2" alignment="CENTER" layoutX="499.0" layoutY="127.0" prefHeight="98.0" prefWidth="363.0" text="" textFill="RED">
                             <font>
-                                <Font size="18.0" />
+                                <Font size="15.0" />
                             </font>
                         </Label>
                     </children>

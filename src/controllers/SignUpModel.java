@@ -33,7 +33,7 @@ public class SignUpModel {
     public String[] getData(String user, String pass)throws SQLException{
         PreparedStatement preparedS = null;
         ResultSet resultSet = null;
-        String query = "SELECT * FROM USER WHERE USERNAME = ? AND PASSWORD = ?";
+        String query = "SELECT * FROM USERS WHERE USERNAME = ? AND PASSWORD = ?";
         try{
             preparedS = connection.prepareStatement(query);
             preparedS.setString(1, user);
@@ -63,7 +63,7 @@ public class SignUpModel {
         boolean exists = false;
         PreparedStatement preparedS = null;
         ResultSet resultSet = null;
-        String query = "SELECT USERNAME FROM USER WHERE USERNAME = ?";
+        String query = "SELECT USERNAME FROM USERS WHERE USERNAME = ?";
         try{
             preparedS = connection.prepareStatement(query);
             preparedS.setString(1, username);
@@ -88,7 +88,7 @@ public class SignUpModel {
     public void addToDB(String fName, String lName, String user, String pass, String flag) throws SQLException{
         PreparedStatement preparedS = null;
         
-        String query = "INSERT INTO USER VALUES(?, ?, ?, ?, ?)";
+        String query = "INSERT INTO USERS VALUES(?, ?, ?, ?, ?)";
         
         try{
             preparedS = connection.prepareStatement(query);
