@@ -5,13 +5,11 @@ public class Business extends Customer{
     private int rating;
     private int businessID;
 
-    public Business(String fn, String ln, int id, String bn, int rate){
-        super(fn, ln, id);
-        businessname=bn;
+    public Business(String fn, String ln, String bn, String pw, int id, int rate){
+        super(fn, ln, bn, pw, id);
         rating=rate;
         businessID=id;
     }
-
     public String getBusinessname(){
         return businessname;
     }

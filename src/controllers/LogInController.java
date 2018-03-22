@@ -5,17 +5,23 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+
+import java.sql.SQLException;
 
 import javax.swing.*;
 
@@ -26,8 +32,15 @@ import javax.swing.*;
  */
 public class LogInController implements Initializable {
 
+    protected SignUpModel loginModel = new SignUpModel();
     @FXML
     private Pane pane;
+    @FXML
+    private TextField usrname;
+    @FXML
+    private TextField pword;
+    @FXML
+    private Label errorlabel;
 
     /**
      * Initializes the controller class.
@@ -38,16 +51,26 @@ public class LogInController implements Initializable {
     }
 
     @FXML
-    private void open_SignUp(ActionEvent e) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("/views/SignUp.fxml"));
-       // pane.getChildren().removeAll();
-        pane.getChildren().setAll(fxml);
+    public void clicked_Login() throws SQLException {
+        try {
 
-    }
-
-    @FXML
-    private void clicked_Login(javafx.scene.input.MouseEvent me){
-
+            String username = usrname.getText();
+            String password = pword.getText();
+            String[] data = loginModel.getData(username, password);
+            if (data != null) {
+//                if (data[4].equals("Student")) {
+//
+//                } else if (data[4].equals("Teacher")) {
+//
+//                }
+                errorlabel.setTextFill(Color.GREEN);
+                errorlabel.setText("Login Successful");
+            } else if (username.equals("") || password.equals("")) {
+                errorlabel.setText("Username or password cannot be blank.");
+            } else errorlabel.setText("Incorrect username or password. Please try again.");
+        } catch (SQLException ex) {
+            Logger.getLogger(SignUpModel.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
 

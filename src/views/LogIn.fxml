@@ -26,8 +26,8 @@
                     <children>
                         <GridPane layoutX="180.0" layoutY="95.0" prefHeight="162.0" prefWidth="240.0">
                             <children>
-                                <JFXPasswordField GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="password"/>
-                                <JFXTextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="username"/>
+                                <JFXTextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="usrname"/>
+                                <JFXPasswordField GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="pword"/>
                                 <Label contentDisplay="RIGHT" prefHeight="17.0" prefWidth="94.0" text="Username:"
                                        GridPane.rowIndex="1">
                                     <font>
@@ -67,6 +67,11 @@
                             </font>
                         </JFXButton>
                     </children>
+                    <Label fx:id="errorlabel" alignment="CENTER" layoutX="500.0" layoutY="127.0" prefHeight="98.0" prefWidth="260.0" text="" textFill="RED">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Label>
                 </AnchorPane>
             </content>
         </Tab>
