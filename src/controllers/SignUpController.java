@@ -53,9 +53,19 @@ public class SignUpController implements Initializable {
     @FXML
     private PasswordField bpassword;
     @FXML
+    private TextField dusername;
+    @FXML
+    private PasswordField dpassword;
+    @FXML
+    private TextField dfirstname;
+    @FXML
+    private TextField dlastname;
+    @FXML
     private Label errorlabel;
     @FXML
     private Label errorlabel2;
+    @FXML
+    private Label errorlabel3;
 
     /**
      * Initializes the controller class.
@@ -83,7 +93,7 @@ public class SignUpController implements Initializable {
         }
     }
 
-    public void clicked_SignUpBus(javafx.scene.input.MouseEvent me) throws SQLException {
+    public void clicked_SignUpBus() throws SQLException {
         if(bfirstname.getText().isEmpty()||blastname.getText().isEmpty()) errorlabel2.setText("First name or Surname cannot be empty");
         if(bpassword.getText().isEmpty()) errorlabel2.setText("Password cannot be empty");
         if(businessname.getText().isEmpty()){
@@ -97,6 +107,23 @@ public class SignUpController implements Initializable {
             loginModel.addToDB(bfirstname.getText(), blastname.getText(), businessname.getText(), bpassword.getText(), "B");
             errorlabel2.setTextFill(Color.GREEN);
             errorlabel2.setText("You have registered successfully! Click back and you can log in.");
+        }
+    }
+
+    public void clicked_SignUpDri() throws SQLException {
+        if(dfirstname.getText().isEmpty()||dlastname.getText().isEmpty()) errorlabel3.setText("First name or Surname cannot be empty");
+        if(dpassword.getText().isEmpty()) errorlabel3.setText("Password cannot be empty");
+        if(dusername.getText().isEmpty()){
+            errorlabel3.setText("Username cannot be empty");
+            return;
+        }
+        boolean exists = loginModel.checkUsername(dusername.getText());
+
+        if(exists) errorlabel3.setText("Username is already registered to an account, please enter a different one.");
+        else{
+            loginModel.addToDB(dfirstname.getText(), dlastname.getText(), dusername.getText(), dpassword.getText(), "D");
+            errorlabel3.setTextFill(Color.GREEN);
+            errorlabel3.setText("You have registered successfully! Click back and you can log in.");
         }
     }
 

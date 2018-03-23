@@ -47,6 +47,7 @@ public class SignUpModel {
                 list[1] = resultSet.getString("PASSWORD");
                 list[2] = resultSet.getString("FNAME");
                 list[3] = resultSet.getString("LNAME");
+                list[4] = resultSet.getString("ACCTYPE");
                 return list;
             } else return null;
         }catch(Exception e){
