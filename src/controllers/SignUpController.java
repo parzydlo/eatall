@@ -1,31 +1,19 @@
 package controllers;
 
-import java.io.*;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.sql.SQLException;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import javafx.stage.Stage;
-import javafx.scene.control.TextField;
-import main.Business;
-import main.Individual;
-import main.User;
+import model.*;
+
+import java.net.URL;
+import java.sql.SQLException;
+import java.util.Random;
+import java.util.ResourceBundle;
 
 /**
  * FXML Controller class
@@ -47,9 +35,7 @@ public class SignUpController implements Initializable {
     @FXML
     private TextField businessname;
     @FXML
-    private TextField bfirstname;
-    @FXML
-    private TextField blastname;
+    private TextField busername;
     @FXML
     private PasswordField bpassword;
     @FXML
@@ -66,6 +52,12 @@ public class SignUpController implements Initializable {
     private Label errorlabel2;
     @FXML
     private Label errorlabel3;
+    @FXML
+    private TextArea bdescription;
+    @FXML
+    private TextField bstreet;
+    @FXML
+    private TextField bpostcode;
 
     /**
      * Initializes the controller class.
@@ -73,6 +65,7 @@ public class SignUpController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        UserList.getInstance();
     }
 
     public void clicked_SignUpInd() throws SQLException{
@@ -83,30 +76,32 @@ public class SignUpController implements Initializable {
             errorlabel.setText("Username cannot be empty");
             return;
         }
-        boolean exists = loginModel.checkUsername(username.getText());
+        boolean exists = UserList.getInstance().isUsernameTaken(username.getText());
 
         if(exists) errorlabel.setText("Username is already registered to an account, please enter a different one.");
         else{
-            loginModel.addToDB(firstname.getText(), lastname.getText(), username.getText(), password.getText(), "I");
+            //loginModel.addToDB(firstname.getText(), lastname.getText(), username.getText(), password.getText(), "I");
             errorlabel.setTextFill(Color.GREEN);
             errorlabel.setText("You have registered successfully! Click back and you can log in.");
+            UserList.getInstance().addUser(new Individual(firstname.getText(), lastname.getText(), username.getText(), password.getText()));
         }
     }
 
     public void clicked_SignUpBus() throws SQLException {
-        if(bfirstname.getText().isEmpty()||blastname.getText().isEmpty()) errorlabel2.setText("First name or Surname cannot be empty");
+        if (busername.getText().isEmpty()) errorlabel2.setText("First name or Surname cannot be empty");
         if(bpassword.getText().isEmpty()) errorlabel2.setText("Password cannot be empty");
         if(businessname.getText().isEmpty()){
             errorlabel2.setText("Username cannot be empty");
             return;
         }
-        boolean exists = loginModel.checkUsername(username.getText());
+        boolean exists = UserList.getInstance().isUsernameTaken(busername.getText());
 
         if(exists) errorlabel2.setText("Username is already registered to an account, please enter a different one.");
         else{
-            loginModel.addToDB(bfirstname.getText(), blastname.getText(), businessname.getText(), bpassword.getText(), "B");
+            //loginModel.addToDB(bfirstname.getText(), blastname.getText(), businessname.getText(), bpassword.getText(), "B");
             errorlabel2.setTextFill(Color.GREEN);
             errorlabel2.setText("You have registered successfully! Click back and you can log in.");
+            UserList.getInstance().addUser(new Business(businessname.getText(), busername.getText(), bpassword.getText(), bdescription.getText(), bstreet.getText(), bpostcode.getText()));
         }
     }
 
@@ -117,13 +112,16 @@ public class SignUpController implements Initializable {
             errorlabel3.setText("Username cannot be empty");
             return;
         }
-        boolean exists = loginModel.checkUsername(dusername.getText());
+        // boolean exists = loginModel.checkUsername(dusername.getText());
+        boolean exists = UserList.getInstance().isUsernameTaken(dusername.getText());
+
 
         if(exists) errorlabel3.setText("Username is already registered to an account, please enter a different one.");
         else{
-            loginModel.addToDB(dfirstname.getText(), dlastname.getText(), dusername.getText(), dpassword.getText(), "D");
+            //loginModel.addToDB(dfirstname.getText(), dlastname.getText(), dusername.getText(), dpassword.getText(), "D");
             errorlabel3.setTextFill(Color.GREEN);
             errorlabel3.setText("You have registered successfully! Click back and you can log in.");
+            UserList.getInstance().addUser(new Driver(dfirstname.getText(), dlastname.getText(), dusername.getText(), dpassword.getText()));
         }
     }
 

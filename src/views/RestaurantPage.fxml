@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.shape.*?>
-<?import com.jfoenix.controls.*?>
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-
 <BorderPane fx:id="parent" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RestaurantPageController">
    <left>
       <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="sidepane" BorderPane.alignment="CENTER">
@@ -63,7 +50,7 @@
    <center>
       <Pane fx:id="contentArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="826.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox prefHeight="392.0" prefWidth="827.0" />
+             <VBox fx:id="content" prefHeight="392.0" prefWidth="827.0"/>
          </children></Pane>
    </center>
    <top>

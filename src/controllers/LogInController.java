@@ -1,29 +1,17 @@
 package controllers;
 
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import javafx.stage.Stage;
+import model.SignUpModel;
+import model.UserList;
 
+import java.net.URL;
 import java.sql.SQLException;
-
-import javax.swing.*;
+import java.util.ResourceBundle;
 
 /**
  * FXML Controller class
@@ -52,12 +40,10 @@ public class LogInController implements Initializable {
 
     @FXML
     public void clicked_Login() throws SQLException {
-        try {
-
             String username = usrname.getText();
             String password = pword.getText();
-            String[] data = loginModel.getData(username, password);
-            if (data != null) {
+        boolean data = UserList.getInstance().verifyCredentials(username, password);
+        if (data) {
 //                if (data[4].equals("Student")) {
 //
 //                } else if (data[4].equals("Teacher")) {
@@ -65,12 +51,12 @@ public class LogInController implements Initializable {
 //                }
                 errorlabel.setTextFill(Color.GREEN);
                 errorlabel.setText("Login Successful");
-            } else if (username.equals("") || password.equals("")) {
+
+
+        } else if (username.equals("") || password.equals("")) {
                 errorlabel.setText("Username or password cannot be blank.");
             } else errorlabel.setText("Incorrect username or password. Please try again.");
-        } catch (SQLException ex) {
-            Logger.getLogger(SignUpModel.class.getName()).log(Level.SEVERE, null, ex);
-        }
+
     }
 
 
