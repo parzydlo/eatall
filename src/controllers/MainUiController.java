@@ -51,7 +51,6 @@ public class MainUiController implements Initializable {
         contentArea.getChildren().setAll(fxml);
     }
 
-
     @FXML
     private void open_LogIn(MouseEvent ME) throws IOException {
         Parent fxml = FXMLLoader.load(getClass().getResource("/views/Login.fxml"));

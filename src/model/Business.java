@@ -9,8 +9,8 @@ public class Business extends Customer {
     private String postcode;
     private int rating;
     private ArrayList<Item> items;
-
     private String businessname;
+
 
     public Business(String bName, String userName, String password, String description, String street, String postcode) {
         super(bName, userName, password);
@@ -19,6 +19,10 @@ public class Business extends Customer {
         setDescription(description);
         setStreet(street);
         setPostcode(postcode);
+    }
+
+    public ArrayList<Item> getItems() {
+        return items;
     }
 
     public String getDescription() {
@@ -63,10 +67,12 @@ public class Business extends Customer {
 
     public void addItem(Item I) {
         items.add(I);
+        UserList.getInstance().updateUserListFile();
     }
 
     public void removeItem(Item I) {
         items.remove(I);
+        UserList.getInstance().updateUserListFile();
     }
 
 

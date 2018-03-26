@@ -10,6 +10,16 @@ public class UserList implements Serializable {
     private static UserList userList = null;
     private ArrayList<User> userArrayList;
 
+    public User getLoggedInUser() {
+        return loggedInUser;
+    }
+
+    public void setLoggedInUser(User loggedInUser) {
+        this.loggedInUser = loggedInUser;
+    }
+
+    private User loggedInUser;
+
     private UserList() {
         // Exists only to defeat instantiation.
         userArrayList = new ArrayList<>();
@@ -48,7 +58,7 @@ public class UserList implements Serializable {
         updateUserListFile();
     }
 
-    public ArrayList<Business> getBusinessList() {
+    public ArrayList<Business> getBuisnessList() {
         ArrayList<Business> buisnessArrayList = new ArrayList<>();
         for (User u : userArrayList)
             if (u instanceof Business)
@@ -56,7 +66,7 @@ public class UserList implements Serializable {
         return buisnessArrayList;
     }
 
-    private void updateUserListFile() {
+    public void updateUserListFile() {
         System.out.println("update");
 
         /// write object to file
@@ -91,6 +101,13 @@ public class UserList implements Serializable {
             if (u.getUsername().equalsIgnoreCase(username) && u.getPassword().equals(password))
                 return true;
         return false;
+    }
+
+    public User getUserWithCredentials(String username, String password) {
+        for (User u : userArrayList)
+            if (u.getUsername().equalsIgnoreCase(username) && u.getPassword().equals(password))
+                return u;
+        return null;
     }
 
 

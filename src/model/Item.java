@@ -5,22 +5,30 @@ import java.util.ArrayList;
 
 public class Item implements Serializable {
 
+    int quantity;
     private String name;
     private String description;
     private double cost;
     private boolean available;
-
-    public ArrayList<String> getCategories() {
-        return categories;
-    }
-
     private ArrayList<String> categories;
-
-    public Item(String name, int price, String description) {
+    public Item(String name, double price, int quantity, String description) {
         setName(name);
         setCost(price);
         setAvailable(true);
+        setQuantity(quantity);
         categories = new ArrayList<>();
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public ArrayList<String> getCategories() {
+        return categories;
     }
 
     public void addCategory(String category) {
@@ -31,36 +39,37 @@ public class Item implements Serializable {
         categories.remove(category);
     }
 
-	public String getName() {
-		return this.name;
-	}
-
-	public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return this.name;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
         return this.description;
     }
 
-	public double getCost() {
-		return this.cost;
-	}
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-	public void setCost(double cost) {
-		this.cost = cost;
-	}
+    public double getCost() {
+        return this.cost;
+    }
 
-	public boolean getAvailable() {
-		return this.available;
-	}
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
 
-	public void setAvailable(boolean available) {
-		this.available = available;
-	}
+    public boolean getAvailable() {
+        return this.available;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+
 
 }

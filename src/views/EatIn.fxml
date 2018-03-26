@@ -2,17 +2,10 @@
 
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.text.Font?>
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXTextField?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.TilePane?>
-<ScrollPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="374.0" prefWidth="827.0" hbarPolicy="NEVER" vbarPolicy="NEVER" fitToWidth="true" style="-fx-background-color: #F0F0F0;" xmlns="http://javafx.com/javafx/8" fx:controller="controllers.EatInController">
-    <TilePane  fx:id="grid" alignment="TOP_CENTER" prefHeight="374.0" prefWidth="827.0">
-           <children>
-           </children>
-    </TilePane>
+<ScrollPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="390.0" prefWidth="826.0" vbarPolicy="NEVER"
+            xmlns="http://javafx.com/javafx/8" fx:controller="controllers.EatInController">
+    <content>
+        <HBox fx:id="pane" prefHeight="390.0" prefWidth="826.0"/>
+    </content>
 </ScrollPane>
-

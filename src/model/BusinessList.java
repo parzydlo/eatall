@@ -1,9 +1,13 @@
 package model;
 
 import java.util.ArrayList;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
-import java.util.Arrays;
-import java.util.List;
 
 
 public class BusinessList implements Serializable {
@@ -12,7 +16,17 @@ public class BusinessList implements Serializable {
 
 
     private static BusinessList businessList = null;
-    private ArrayList<Business> businessArrayList;
+    private static ArrayList<Business> buisnessArrayList;
+
+    public Business getSelectedBuisness() {
+        return selectedBuisness;
+    }
+
+    public void setSelectedBuisness(Business selectedBuisness) {
+        this.selectedBuisness = selectedBuisness;
+    }
+
+    private Business selectedBuisness;
 
     public ArrayList<Business> getLastQuery() {
         return lastQuery;
@@ -26,35 +40,21 @@ public class BusinessList implements Serializable {
 
 	private BusinessList() {
         // Exists only to defeat instantiation.
-//        businessArrayList = UserList.getInstance().getBusinessList();
-//        lastQuery = businessArrayList;
-        Business[] predefinedBusinesses = {
-                new Business("Nandos", "NandosUsername", "asdf", "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "Mile End Road", "E1 4PQ"),
-                new Business("Dominos", "DominosUsername", "asdf", "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "Mile End Road", "E1 4PQ"),
-                new Business("KFC", "KFCUsername", "asdf", "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "Mile End Road", "E1 4PQ"),
-                new Business("Peri Peri", "PeriPeriUsername", "asdf", "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "Mile End Road", "E1 4PQ"),
-                new Business("Subway", "SubwayUsername", "asdf", "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "Mile End Road", "E1 4PQ"),
-                new Business("Kitchen Pizzeria", "KitchenPizzeriaUsername", "asdf", "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "Mile End Road", "E1 4PQ"),
-                new Business("Pizza Pizza", "PizzaPizzaUsername", "asdf", "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "Mile End Road", "E1 4PQ"),
-                new Business("FFC", "FFCUsername", "asdf", "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "Mile End Road", "E1 4PQ"),
-        };
-        businessArrayList = new ArrayList<Business>(Arrays.asList(predefinedBusinesses));
-    }
+        buisnessArrayList = UserList.getInstance().getBuisnessList();
+        lastQuery = buisnessArrayList;
+	}
 
 	public static BusinessList getInstance() {
         if(businessList == null){
             businessList = new BusinessList();
         }
+        buisnessArrayList = UserList.getInstance().getBuisnessList();
 	    return businessList;
 	}
 
-	public ArrayList<Business> getBusinessArrayList() {
-        return businessArrayList;
-    }
-
 	public void searchByName(String name) {
         ArrayList<Business> results = new ArrayList<Business>();
-        for(Business b : businessArrayList)
+        for(Business b : buisnessArrayList)
             if(b.getBusinessname().toLowerCase().contains(name.toLowerCase()))
                 results.add(b);
         lastQuery = results;
@@ -62,7 +62,7 @@ public class BusinessList implements Serializable {
 
     public void searchByCategory(ArrayList<String> categories) {
         ArrayList<Business> results = new ArrayList<Business>();
-        for(Business b : businessArrayList)
+        for(Business b : buisnessArrayList)
            //b.
 
                 results.add(b);
@@ -71,7 +71,7 @@ public class BusinessList implements Serializable {
 
     public ArrayList<Business> searchByLocation(String name) {
         ArrayList<Business> results = new ArrayList<Business>();
-        for(Business b : businessArrayList)
+        for(Business b : buisnessArrayList)
             if(b.getBusinessname().toLowerCase().contains(name))
                 results.add(b);
         return results;

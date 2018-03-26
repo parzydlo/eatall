@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BuisnessItemListController">
+   <children>
+      <VBox layoutX="1.0" prefHeight="476.0" prefWidth="733.0" spacing="10.0">
+         <children>
+            <TableView fx:id="tableView" prefHeight="182.0" prefWidth="670.0">
+               <columns>
+                  <TableColumn fx:id="ItemNameCol" onEditCommit="#changeItemName" prefWidth="173.0" text="Item" />
+                  <TableColumn fx:id="PriceCol" onEditCommit="#changeItemPrice" prefWidth="49.0" text="Price" />
+                  <TableColumn fx:id="QuantityCol" onEditCommit="#changeItemQuantity" prefWidth="66.0" text="Quantity" />
+                  <TableColumn fx:id="descriptionCol" onEditCommit="#changeItemDes" prefWidth="377.0" text="Description" />
+                  <TableColumn fx:id="availableCol" onEditCommit="#changeItemAvail" prefWidth="67.0" text="Available" />
+               </columns>
+            </TableView>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="202.0" prefHeight="57.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <JFXButton maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="168.0" ripplerFill="WHITE" style="-fx-background-color: #DACE00; -fx-background-radius: 0px;" text="Remove Selected Items">
+                     <font>
+                        <Font name="Roboto Condensed Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="itemName" prefHeight="27.0" prefWidth="178.0" promptText="Item" />
+                  <TextField fx:id="itemPrice" prefHeight="27.0" prefWidth="183.0" promptText="Price" />
+                  <TextField fx:id="itemQuantity" layoutX="195.0" layoutY="47.0" prefHeight="27.0" prefWidth="160.0" promptText="Quantity" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="114.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <TextArea fx:id="itemDescription" prefHeight="114.0" prefWidth="543.0" promptText="Enter a description about the new item." />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="343.0" prefHeight="63.0" prefWidth="664.0" spacing="10.0">
+               <children>
+                  <JFXButton maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#newItemPressed" prefHeight="30.0" prefWidth="119.0" ripplerFill="WHITE" style="-fx-background-color: #DACE00; -fx-background-radius: 0px;" text="Add Item">
+                     <font>
+                        <Font name="Roboto Condensed Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>
