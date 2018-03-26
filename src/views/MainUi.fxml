@@ -81,6 +81,7 @@
                   <Text fx:id="loginButton" onMouseClicked="#open_LogIn" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In" textAlignment="RIGHT" wrappingWidth="51.29412841796875" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <Text fx:id="signupButton" onMouseClicked="#open_SignUp" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up" wrappingWidth="52.2479248046875" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                   <Text fx:id="accountButton" onMouseClicked="#open_Account" strokeType="OUTSIDE" strokeWidth="0.0" text="My Account" wrappingWidth="72.2479248046875" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Text fx:id="logoutButton" onMouseClicked="#logout" strokeType="OUTSIDE" strokeWidth="0.0" text="Log Out" textAlignment="RIGHT" wrappingWidth="51.29412841796875" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                </children>
             </GridPane>
             <ImageView fitHeight="39.0" fitWidth="222.0" layoutX="18.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">

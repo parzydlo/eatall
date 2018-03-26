@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91f8f2d5-f937-4217-9a66-b2d1421b35c7" name="Default" comment="lots of changes">
+<<<<<<< HEAD
       <change beforePath="" afterPath="$PROJECT_DIR$/src/controllers/ReviewController.java" />
       <change beforePath="" afterPath="$PROJECT_DIR$/src/views/Reviews.fxml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -11,6 +12,11 @@
       <change beforePath="$PROJECT_DIR$/src/icons/logo.png" afterPath="$PROJECT_DIR$/src/icons/logo.png" />
       <change beforePath="$PROJECT_DIR$/src/model/Business.java" afterPath="$PROJECT_DIR$/src/model/Business.java" />
       <change beforePath="$PROJECT_DIR$/src/views/RestaurantPage.fxml" afterPath="$PROJECT_DIR$/src/views/RestaurantPage.fxml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/MainUiController.java" afterPath="$PROJECT_DIR$/src/controllers/MainUiController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/MainUi.fxml" afterPath="$PROJECT_DIR$/src/views/MainUi.fxml" />
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
     </list>
     <ignored path="eatall.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,6 +52,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="Individual.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Individual.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,6 +65,10 @@
       </file>
       <file leaf-file-name="RestaurantPageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/RestaurantPageController.java">
+=======
+      <file leaf-file-name="Account.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/Account.fxml">
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
               <caret line="83" column="12" lean-forward="true" selection-start-line="83" selection-start-column="12" selection-end-line="89" selection-end-column="0" />
@@ -68,16 +79,25 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ReviewController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/ReviewController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="59" column="27" lean-forward="false" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+=======
+      <file leaf-file-name="AccountController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/AccountController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="80" column="64" selection-start-line="80" selection-start-column="64" selection-end-line="80" selection-end-column="64" />
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Reviews.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/Reviews.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
@@ -86,11 +106,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+=======
+      <file leaf-file-name="MainUiController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/MainUiController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1309">
+              <caret line="92" column="24" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="MainUi.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/MainUi.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
@@ -99,11 +127,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
               <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+=======
+      <file leaf-file-name="LogInController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controllers/LogInController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="EatIn.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/EatIn.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
@@ -112,26 +148,69 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="91" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+=======
+      <file leaf-file-name="Home.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/Home.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-458">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MainUiController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/MainUiController.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-512">
               <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+=======
+            <state relative-caret-position="-530">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="RestaurantPage.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/RestaurantPage.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
+=======
+      <file leaf-file-name="MainUi.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/MainUi.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="83" column="228" selection-start-line="83" selection-start-column="228" selection-end-line="83" selection-end-column="228" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/SignUpController.java">
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="35" column="265" lean-forward="false" selection-start-line="35" selection-start-column="265" selection-end-line="35" selection-end-column="265" />
@@ -150,6 +229,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Business.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Business.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -165,6 +245,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -224,8 +306,6 @@
         <option value="$PROJECT_DIR$/src/main/Launch.java" />
         <option value="$PROJECT_DIR$/src/views/OrdersView.fxml" />
         <option value="$PROJECT_DIR$/src/controllers/OrdersController.java" />
-        <option value="$PROJECT_DIR$/src/views/MainUi.fxml" />
-        <option value="$PROJECT_DIR$/src/controllers/MainUiController.java" />
         <option value="$PROJECT_DIR$/src/model/Order.java" />
         <option value="$PROJECT_DIR$/src/model/OrderList.java" />
         <option value="$PROJECT_DIR$/src/model/UserList.java" />
@@ -233,12 +313,18 @@
         <option value="$PROJECT_DIR$/src/model/Individual.java" />
         <option value="$PROJECT_DIR$/src/controllers/SignUpController.java" />
         <option value="$PROJECT_DIR$/src/controllers/AccountController.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/model/Business.java" />
         <option value="$PROJECT_DIR$/src/controllers/RestaurantPageController.java" />
         <option value="$PROJECT_DIR$/EatInController.java" />
         <option value="$PROJECT_DIR$/src/views/RestaurantPage.fxml" />
         <option value="$PROJECT_DIR$/src/views/Reviews.fxml" />
         <option value="$PROJECT_DIR$/src/controllers/ReviewController.java" />
+=======
+        <option value="$PROJECT_DIR$/src/views/MainUi.fxml" />
+        <option value="$PROJECT_DIR$/src/controllers/MainUiController.java" />
+        <option value="$PROJECT_DIR$/src/controllers/LogInController.java" />
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
       </list>
     </option>
   </component>
@@ -277,6 +363,7 @@
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+<<<<<<< HEAD
           <expand>
             <path>
               <item name="eatall" type="b2602c69:ProjectViewProjectNode" />
@@ -307,6 +394,92 @@
             </path>
           </expand>
           <select />
+=======
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eatall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eatall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eatall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eatall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eatall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eatall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eatall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eatall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eatall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eatall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eatall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
         </subPane>
       </pane>
     </panes>
@@ -585,6 +758,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/model/SQLiteConnection.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/layout/Pane.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/paint/Paint.java" />
+    <entry file="file://$PROJECT_DIR$/src/css/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/effect/Effect.java" />
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/paint/Color.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/javafx-src.zip!/javafx/application/Application.java" />
     <entry file="file://$PROJECT_DIR$/src/model/Driver.java">
@@ -699,6 +886,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/controllers/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -706,6 +894,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
     <entry file="file://$PROJECT_DIR$/src/main/ShoppingCartTest.java" />
     <entry file="file://$PROJECT_DIR$/src/model/Item.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -719,12 +909,15 @@
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="266" lean-forward="false" selection-start-line="8" selection-start-column="266" selection-end-line="8" selection-end-column="266" />
           <folding />
         </state>
       </provider>
+=======
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ProductItem.java" />
     <entry file="file://$PROJECT_DIR$/src/model/Order.java">
@@ -850,22 +1043,35 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/model/BusinessList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="42" column="69" lean-forward="false" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/controllers/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="80" column="64" selection-start-line="80" selection-start-column="64" selection-end-line="80" selection-end-column="64" />
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EatInController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="-530">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/controllers/EatInController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-818">
@@ -918,10 +1124,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-512">
           <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Home.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-458">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/MainUi.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="83" column="228" selection-start-line="83" selection-start-column="228" selection-end-line="83" selection-end-column="228" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/MainUiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="92" column="24" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/views/MainUi.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -929,6 +1172,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/controllers/LogInController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+>>>>>>> aefad8a42026cee97187a1da97a6ee0a4219657b
           <folding />
         </state>
       </provider>

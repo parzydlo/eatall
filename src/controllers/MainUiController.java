@@ -24,7 +24,7 @@ public class MainUiController implements Initializable {
     @FXML
     private Pane contentArea;
     @FXML
-    private Text loginButton, signupButton, accountButton;
+    private Text loginButton, signupButton, accountButton, logoutButton;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -33,15 +33,7 @@ public class MainUiController implements Initializable {
             Parent fxml = FXMLLoader.load(getClass().getResource("/views/Home.fxml"));
             contentArea.getChildren().removeAll();
             contentArea.getChildren().setAll(fxml);
-            if (UserList.getInstance().getLoggedInUser() == null) {
-                loginButton.setVisible(true);
-                signupButton.setVisible(true);
-                accountButton.setVisible(false);
-            } else {
-                loginButton.setVisible(false);
-                signupButton.setVisible(false);
-                accountButton.setVisible(true);
-            }
+            refreshButtons();
         } catch (IOException ex) {
             Logger.getLogger(MainUiController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -95,15 +87,23 @@ public class MainUiController implements Initializable {
         contentArea.getChildren().setAll(fxml);
     }
 
+    @FXML
+    private void logout(MouseEvent ME) throws IOException {
+        UserList.getInstance().resetLoggedInUser();
+        refreshButtons();
+    }
+
     private void refreshButtons() {
         if (UserList.getInstance().getLoggedInUser() == null) {
             loginButton.setVisible(true);
             signupButton.setVisible(true);
             accountButton.setVisible(false);
+            logoutButton.setVisible(false);
         } else {
             loginButton.setVisible(false);
             signupButton.setVisible(false);
             accountButton.setVisible(true);
+            logoutButton.setVisible(true);
         }
     }
 
