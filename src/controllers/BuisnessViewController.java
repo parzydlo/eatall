@@ -32,7 +32,7 @@ public class BuisnessViewController implements Initializable{
     @Override
     public void initialize(URL url, ResourceBundle rb)  {
         try {
-            Parent fxml = FXMLLoader.load(getClass().getResource("/views/BuisnessItemList.fxml"));
+            Parent fxml = FXMLLoader.load(getClass().getResource("/views/BusinessItemList.fxml"));
             contentArea.getChildren().removeAll();
             contentArea.getChildren().setAll(fxml);
         }
@@ -44,7 +44,7 @@ public class BuisnessViewController implements Initializable{
 
     @FXML
     private void menu(ActionEvent event) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("/views/BuisnessItemList.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("/views/BusinessItemList.fxml"));
         contentArea.getChildren().removeAll();
         contentArea.getChildren().setAll(fxml);
     }

@@ -20,8 +20,7 @@ import java.util.ResourceBundle;
  * FXML Controller class
  */
 public class AccountController implements Initializable {
-
-    protected SignUpModel loginModel = new SignUpModel();
+    
     Random rand = new Random();
     @FXML
     private Pane pane;

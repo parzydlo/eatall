@@ -20,44 +20,21 @@ import java.util.ResourceBundle;
  */
 public class SignUpController implements Initializable {
 
-    protected SignUpModel loginModel = new SignUpModel();
     Random rand = new Random();
     @FXML
     private Pane pane;
     @FXML
-    private TextField username;
+    private TextField username, firstname, lastname;
     @FXML
-    private PasswordField password;
+    private PasswordField password, bpassword, dpassword;
     @FXML
-    private TextField firstname;
+    private TextField businessname, busername, bstreet, bpostcode;
     @FXML
-    private TextField lastname;
+    private TextField dusername, dfirstname, dlastname;
     @FXML
-    private TextField businessname;
-    @FXML
-    private TextField busername;
-    @FXML
-    private PasswordField bpassword;
-    @FXML
-    private TextField dusername;
-    @FXML
-    private PasswordField dpassword;
-    @FXML
-    private TextField dfirstname;
-    @FXML
-    private TextField dlastname;
-    @FXML
-    private Label errorlabel;
-    @FXML
-    private Label errorlabel2;
-    @FXML
-    private Label errorlabel3;
+    private Label errorlabel, errorlabel2, errorlabel3;
     @FXML
     private TextArea bdescription;
-    @FXML
-    private TextField bstreet;
-    @FXML
-    private TextField bpostcode;
 
     /**
      * Initializes the controller class.

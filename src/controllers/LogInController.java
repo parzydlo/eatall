@@ -19,17 +19,13 @@ import java.util.ResourceBundle;
 /**
  * FXML Controller class
  *
- * @author Benny Coder
  */
 public class LogInController implements Initializable {
 
-    protected SignUpModel loginModel = new SignUpModel();
     @FXML
     private Pane pane;
     @FXML
-    private TextField usrname;
-    @FXML
-    private TextField pword;
+    private TextField usrname, pword;
     @FXML
     private Label errorlabel;
 
@@ -42,7 +38,7 @@ public class LogInController implements Initializable {
     }
 
     @FXML
-    public void clicked_Login() throws SQLException {
+    public void clicked_Login() {
         String username = usrname.getText();
         String password = pword.getText();
         boolean data = UserList.getInstance().verifyCredentials(username, password);
@@ -56,7 +52,7 @@ public class LogInController implements Initializable {
                 //Load buisness view
                 try {
                     System.out.println("loadme");
-                    Parent root = FXMLLoader.load(getClass().getResource("/views/BuisnessView.fxml"));
+                    Parent root = FXMLLoader.load(getClass().getResource("/views/BusinessView.fxml"));
                     Scene scene = new Scene(root);
                     Stage stage = new Stage();
                     stage.setScene(scene);

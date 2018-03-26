@@ -47,11 +47,13 @@ public class SearchCategoryController implements Initializable {
     }
 
     @FXML
-    private void search() {
+    private void search() throws IOException {
         String[] searchTerms = searchField.getText().split(",");
         ArrayList<String> searchCategories = new ArrayList<String>(Arrays.asList(searchTerms));
-
         BusinessList.getInstance().searchByCategory(searchCategories);
 
+        Parent fxml = FXMLLoader.load(getClass().getResource("/views/EatIn.fxml"));
+        contentArea.getChildren().removeAll();
+        contentArea.getChildren().setAll(fxml);
     }
 }

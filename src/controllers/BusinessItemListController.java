@@ -29,7 +29,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.ResourceBundle;
 
-public class BuisnessItemListController implements Initializable {
+public class BusinessItemListController implements Initializable {
 
 
     @FXML
@@ -39,19 +39,13 @@ public class BuisnessItemListController implements Initializable {
     private TableColumn<Item, Double> PriceCol;
 
     @FXML
-    private TextField itemName;
+    private TextField itemName, itemPrice, itemQuantity;
 
     @FXML
     private TableView<Item> tableView;
 
     @FXML
-    private TextField itemPrice;
-
-    @FXML
-    private TextField itemQuantity;
-
-    @FXML
-        private TextArea itemDescription;
+    private TextArea itemDescription;
 
     @FXML
     private TableColumn<Item, String> ItemNameCol;
