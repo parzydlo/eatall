@@ -16,13 +16,13 @@
         <children>
             <GridPane layoutX="124.0" layoutY="48.0" prefHeight="247.0" prefWidth="265.0">
                 <children>
-                    <JFXTextField fx:id="firstname" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                    <JFXTextField fx:id="lastname" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                    <JFXTextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                    <JFXTextField fx:id="firstname" promptText="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    <JFXTextField fx:id="lastname" promptText="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    <JFXTextField fx:id="username" promptText="" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                     <JFXPasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                    <JFXTextField fx:id="udoor" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
-                    <JFXTextField fx:id="ustreet" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
-                    <JFXTextField fx:id="upostcode" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+                    <JFXTextField fx:id="udoor" promptText="" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+                    <JFXTextField fx:id="ustreet" promptText="" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+                    <JFXTextField fx:id="upostcode" promptText="" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
                     <Label contentDisplay="RIGHT" prefHeight="17.0" prefWidth="94.0" text="First Name:" GridPane.rowIndex="1">
                         <font>
                             <Font size="16.0" />
@@ -164,4 +164,12 @@
             <!--</Label>-->
         </children>
     </AnchorPane>
+    <JFXButton layoutX="397.0" layoutY="311.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clicked_RemoveAccount"
+               prefHeight="30.0" prefWidth="145.0" ripplerFill="WHITE"
+               style="-fx-background-color: #DACE00; -fx-background-radius: 0px;" text="Remove Account">
+        <font>
+            <Font name="Roboto Condensed Bold" size="13.0" />
+        </font>
+    </JFXButton>
 </Pane>

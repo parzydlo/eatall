@@ -62,7 +62,25 @@ public class AccountController implements Initializable {
 //            driverForm.setVisible(true);
             System.out.println("Driver user.");
         }
+        prepareTextFields(user);
         System.out.println("Account Controller initialised.");
+    }
+
+    private void prepareTextFields(User user) {
+        if (user instanceof Individual) {
+            firstname.setPromptText(user.getName().split(" ")[0]);
+            lastname.setPromptText(user.getName().split(" ")[1]);
+            username.setPromptText(user.getUsername());
+            udoor.setPromptText(((Individual) user).getDoor());
+            ustreet.setPromptText(((Individual) user).getStreet());
+            upostcode.setPromptText(((Individual) user).getPostcode());
+        } else if (user instanceof Business) {
+            businessname.setPromptText(((Business) user).getBusinessname());
+            busername.setPromptText(user.getUsername());
+            bpostcode.setPromptText(((Business) user).getPostcode());
+            bstreet.setPromptText(((Business) user).getStreet());
+            bdescription.setPromptText(((Business) user).getDescription());
+        }
     }
 
     public void clicked_UpdateAccount() {
@@ -77,6 +95,16 @@ public class AccountController implements Initializable {
         } else {
             updateDriver(user);
         }
+    }
+
+    public void clicked_RemoveAccount() {
+        System.out.println("Removing account");
+        User user = UserList.getInstance().getLoggedInUser();
+        if (user == null) System.out.println("Cannot remove non-existing user!");
+
+        UserList.getInstance().removeUser(user);
+        errorlabel1.setTextFill(Color.GREEN);
+        errorlabel1.setText("Account removed successfully!");
     }
 
     public void updateIndividual(User user) {

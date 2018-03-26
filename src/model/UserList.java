@@ -57,6 +57,7 @@ public class UserList implements Serializable {
     public void removeUser(User u) {
         userArrayList.remove(u);
         printAll();
+        resetLoggedInUser();
         updateUserListFile();
     }
 

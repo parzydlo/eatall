@@ -24,7 +24,7 @@ public class SignUpController implements Initializable {
     @FXML
     private Pane pane;
     @FXML
-    private TextField username, firstname, lastname;
+    private TextField username, firstname, lastname, udoor, ustreet, upostcode;
     @FXML
     private PasswordField password, bpassword, dpassword;
     @FXML
@@ -61,7 +61,7 @@ public class SignUpController implements Initializable {
             //loginModel.addToDB(firstname.getText(), lastname.getText(), username.getText(), password.getText(), "I");
             errorlabel.setTextFill(Color.GREEN);
             errorlabel.setText("You have registered successfully! Click back and you can log in.");
-            UserList.getInstance().addUser(new Individual(firstname.getText(), lastname.getText(), username.getText(), password.getText()));
+            UserList.getInstance().addUser(new Individual(firstname.getText(), lastname.getText(), username.getText(), password.getText(), udoor.getText(), ustreet.getText(), upostcode.getText()));
         }
     }
 
