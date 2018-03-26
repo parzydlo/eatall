@@ -76,6 +76,7 @@ public class SignUpController implements Initializable {
             errorlabel.setText("Username cannot be empty");
             return;
         }
+        System.out.println(UserList.getInstance());
         boolean exists = UserList.getInstance().isUsernameTaken(username.getText());
 
         if(exists) errorlabel.setText("Username is already registered to an account, please enter a different one.");

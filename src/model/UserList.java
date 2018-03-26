@@ -34,7 +34,9 @@ public class UserList implements Serializable {
                 ObjectInputStream ois = new ObjectInputStream(fis);
                 userList = (UserList) ois.readObject();
                 ois.close();
+                fis.close();
                 userList.printAll();
+                userList.resetLoggedInUser();
             } catch (FileNotFoundException e) {
                 System.out.println("No File to read");
                 userList = new UserList();
@@ -75,6 +77,7 @@ public class UserList implements Serializable {
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(userList);
             oos.close();
+            fos.close();
         } catch (Exception e) {
             System.out.println("No File");
         }
@@ -111,4 +114,7 @@ public class UserList implements Serializable {
     }
 
 
+    public void resetLoggedInUser() {
+        loggedInUser = null;
+    }
 }
