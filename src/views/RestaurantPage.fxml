@@ -62,7 +62,7 @@
          </children></Pane>
    </center>
    <top>
-      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="1051.0" style="-fx-background-color: ;">
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="1051.0">
          <children>
             <GridPane layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="1051.0">
               <columnConstraints>

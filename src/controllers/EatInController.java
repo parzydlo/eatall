@@ -32,7 +32,7 @@ import java.util.ResourceBundle;
 /**
  * FXML Controller class
  *
- * @author Benny Coder
+ *
  */
 public class EatInController implements Initializable {
 
