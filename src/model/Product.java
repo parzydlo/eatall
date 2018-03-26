@@ -1,6 +1,4 @@
-/************
-商品类
-*************/
+package model;
 public class Product
 {
     private int productId;// 商品编号

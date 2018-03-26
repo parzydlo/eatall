@@ -1,7 +1,4 @@
-/***********
-商品条目信息类
-************/
-
+package model;
 
 public class ProductItem
 {
