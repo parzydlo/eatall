@@ -44,7 +44,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="25.0" layoutY="114.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" ripplerFill="WHITE" styleClass="buttons" text="My Orders" textFill="WHITE" underline="true">
+            <JFXButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="25.0" layoutY="114.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#open_Orders" prefHeight="50.0" prefWidth="200.0" ripplerFill="WHITE" styleClass="buttons" text="My Orders" textFill="WHITE" underline="true">
                <font>
                   <Font name="Roboto Condensed" size="14.0" />
                </font>
