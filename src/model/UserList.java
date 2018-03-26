@@ -10,6 +10,16 @@ public class UserList implements Serializable {
     private static UserList userList = null;
     private ArrayList<User> userArrayList;
 
+    public User getLoggedInUser() {
+        return loggedInUser;
+    }
+
+    public void setLoggedInUser(User loggedInUser) {
+        this.loggedInUser = loggedInUser;
+    }
+
+    private User loggedInUser;
+
     private UserList() {
         // Exists only to defeat instantiation.
         userArrayList = new ArrayList<>();
@@ -24,7 +34,9 @@ public class UserList implements Serializable {
                 ObjectInputStream ois = new ObjectInputStream(fis);
                 userList = (UserList) ois.readObject();
                 ois.close();
+                fis.close();
                 userList.printAll();
+                userList.resetLoggedInUser();
             } catch (FileNotFoundException e) {
                 System.out.println("No File to read");
                 userList = new UserList();
@@ -48,7 +60,7 @@ public class UserList implements Serializable {
         updateUserListFile();
     }
 
-    public ArrayList<Business> getBusinessList() {
+    public ArrayList<Business> getBuisnessList() {
         ArrayList<Business> buisnessArrayList = new ArrayList<>();
         for (User u : userArrayList)
             if (u instanceof Business)
@@ -56,7 +68,7 @@ public class UserList implements Serializable {
         return buisnessArrayList;
     }
 
-    private void updateUserListFile() {
+    public void updateUserListFile() {
         System.out.println("update");
 
         /// write object to file
@@ -65,6 +77,7 @@ public class UserList implements Serializable {
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(userList);
             oos.close();
+            fos.close();
         } catch (Exception e) {
             System.out.println("No File");
         }
@@ -93,5 +106,15 @@ public class UserList implements Serializable {
         return false;
     }
 
+    public User getUserWithCredentials(String username, String password) {
+        for (User u : userArrayList)
+            if (u.getUsername().equalsIgnoreCase(username) && u.getPassword().equals(password))
+                return u;
+        return null;
+    }
 
+
+    public void resetLoggedInUser() {
+        loggedInUser = null;
+    }
 }
