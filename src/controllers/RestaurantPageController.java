@@ -15,6 +15,7 @@ import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -23,6 +24,7 @@ import model.Business;
 import model.BusinessList;
 import model.Item;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -34,6 +36,9 @@ public class RestaurantPageController implements Initializable {
 
     @FXML
     VBox content;
+
+    @FXML
+    private Pane contentArea;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -115,6 +120,12 @@ public class RestaurantPageController implements Initializable {
 
             content.getChildren().add(restaurantPane);
         }
+    }
+
+    public void viewReviews() throws IOException {
+        Parent fxml = FXMLLoader.load(getClass().getResource("/views/Reviews.fxml"));
+        contentArea.getChildren().removeAll();
+        contentArea.getChildren().setAll(fxml);
     }
 
 }

@@ -33,7 +33,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="25.0" layoutY="64.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" ripplerFill="WHITE" styleClass="buttons" text="Reviews" textFill="WHITE" underline="true">
+            <JFXButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="25.0" layoutY="64.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" ripplerFill="WHITE" onAction="#viewReviews" styleClass="buttons" text="Reviews" textFill="WHITE" underline="true">
                <font>
                   <Font name="Roboto Condensed" size="14.0" />
                </font>
