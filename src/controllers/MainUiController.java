@@ -66,6 +66,14 @@ public class MainUiController implements Initializable {
     }
 
     @FXML
+    private void open_Orders(ActionEvent event) throws IOException {
+        System.out.println("Showing orders...");
+        Parent fxml = FXMLLoader.load(getClass().getResource("/views/OrdersView.fxml"));
+        contentArea.getChildren().removeAll();
+        contentArea.getChildren().setAll(fxml);
+    }
+
+    @FXML
     private void open_LogIn(MouseEvent ME) throws IOException {
         Parent fxml = FXMLLoader.load(getClass().getResource("/views/Login.fxml"));
         contentArea.getChildren().removeAll();
