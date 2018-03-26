@@ -48,7 +48,7 @@ public class UserList implements Serializable {
         updateUserListFile();
     }
 
-    public ArrayList<Business> getBuisnessList() {
+    public ArrayList<Business> getBusinessList() {
         ArrayList<Business> buisnessArrayList = new ArrayList<>();
         for (User u : userArrayList)
             if (u instanceof Business)
